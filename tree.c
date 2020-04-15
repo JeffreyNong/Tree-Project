@@ -148,7 +148,10 @@ void tree_test() {
 
 
 int main(int argc, const char* argv[]) {
- tree_test();
-
+ //tree_test();
+ if(argc == 2 ){
+  FILE* fin = fopen(argv[1], "r");
+  tree_test_file(fin);
+  fclose(fin);
  return 0;
 }
