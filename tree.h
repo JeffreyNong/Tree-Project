@@ -25,7 +25,7 @@ struct tree {
   size_t size;
 };
 
-
+ 
 //-------------------------------------------------
 tnode* tnode_create(const char* word);
 tree* tree_create(void);
